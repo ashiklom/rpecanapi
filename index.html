@@ -31,6 +31,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -76,7 +78,7 @@
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p><code>rpecanapi</code> is an open source R package to interact with the PEcAn Project Server(s) &amp; leverage the functionality of the PEcAn bioinformatics toolbox. The Predictive Ecosystem Analyser (PEcAn) Project is an open source framework initiated to meet the demands for more accessible, transparent &amp; repeatable modeling of ecosystems. To know more about the PEcAn Project, check out the <a href="https://github.com/PecanProject/pecan">PEcAn Github Repository</a></p>
+<p><code>rpecanapi</code> is an open source R package to interact with the PEcAn Project Server(s) &amp; leverage the functionality of the PEcAn bioinformatics toolbox. The Predictive Ecosystem Analyser (PEcAn) Project is an open source framework initiated to meet the demands for more accessible, transparent &amp; repeatable modeling of ecosystems. To know more about the PEcAn Project, check out the <a href="https://github.com/PecanProject/pecan" class="external-link">PEcAn Github Repository</a></p>
 <p>This package allows users to get relevant information from the PEcAn database as well as submit PEcAn workflows.</p>
 </div>
 <div id="installation" class="section level2">
@@ -110,7 +112,7 @@
 <h4 class="hasAnchor">
 <a href="#load-rpecanapi--create-the-server-object" class="anchor"></a>Load <code>rpecanapi</code> &amp; Create the Server Object</h4>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">rpecanapi</span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">rpecanapi</span><span class="op">)</span>
 
 <span class="va">server</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/connect.html">connect</a></span><span class="op">(</span>url<span class="op">=</span><span class="st">"http://localhost:8000"</span>, username<span class="op">=</span><span class="st">"carya"</span>, password<span class="op">=</span><span class="st">"illinois"</span><span class="op">)</span></code></pre></div>
 </div>
@@ -493,11 +495,11 @@
   <span class="va">server</span>, 
   model_id<span class="op">=</span><span class="fl">1000000014</span>, 
   site_id<span class="op">=</span><span class="fl">772</span>, 
-  pfts<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"temperate.coniferous"</span><span class="op">)</span>, 
+  pfts<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"temperate.coniferous"</span><span class="op">)</span>, 
   start_date<span class="op">=</span><span class="st">"2002-01-01"</span>, 
   end_date<span class="op">=</span><span class="st">"2003-12-31"</span>, 
-  inputs<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
-    met<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>id<span class="op">=</span><span class="fl">99000000003</span><span class="op">)</span>
+  inputs<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>
+    met<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>id<span class="op">=</span><span class="fl">99000000003</span><span class="op">)</span>
   <span class="op">)</span>
 <span class="op">)</span>
 
@@ -690,7 +692,7 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
 <li>Browse source code at at <br><a href="https://github.com/PecanProject/rpecanapi">https://​github.com/​PecanProject/​rpecanapi</a>
 </li>
@@ -698,38 +700,46 @@
 </li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="https://opensource.org/licenses/mit-license.php">MIT</a></li>
 </ul>
 </div>
+
+
 <div class="citation">
-<h2>Citation</h2>
+<h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
 <li><a href="authors.html">Citing rpecanapi</a></li>
 </ul>
 </div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>
 <a href="https://tezansahu.github.io">Tezan Sahu</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-1031-9683" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>Rob Kooper <br><small class="roles"> Author, contributor </small>  </li>
-<li><a href="authors.html">All authors...</a></li>
+<li><a href="authors.html">More on authors...</a></li>
 </ul>
 </div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by <a href="https://tezansahu.github.io">Tezan Sahu</a>, Rob Kooper.</p>
+  <p></p>
+<p>Developed by <a href="https://tezansahu.github.io" class="external-link">Tezan Sahu</a>, Rob Kooper.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.9000.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9000.</p>
 </div>
 
       </footer>
@@ -737,6 +747,8 @@
 
   
 
+
+  
 
   </body>
 </html>
